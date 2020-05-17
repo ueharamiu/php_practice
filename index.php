@@ -13,10 +13,8 @@ for ($i =1; $i < 7; $i++) {
     }
 }
 
-
 $calendar[$j]['day'] = $i;
 $j++;
-
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +37,9 @@ $j++;
                 <th>土</th> 
             </tr>
             <?php $cnt = 0; ?>
-            <?php foreach ($calendar as $key => $value): ?>
+            <?php 
+                foreach ($calendar as $key => $value):
+            ?>
 
                 <td>
                 <?php $cnt++; ?>
