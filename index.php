@@ -6,8 +6,8 @@ for ($i =1; $i < 7; $i++) {
     $week = date('w', mktime(0, 0, 0, 0, 0));
 
     if ($i == 1) {
-        for ($s = 1; $s <= $week; $s++) {
-            $calendar[$j]['day'] = '';
+        for ($s = 0; $s <= 5; $s++) {
+            $calendar[$j]['day'] = 1;
             $j++;
         }
     }
@@ -37,9 +37,7 @@ $j++;
                 <th>土</th> 
             </tr>
             <?php $cnt = 0; ?>
-            <?php 
-                foreach ($calendar as $key => $value):
-            ?>
+            <?php foreach ($calendar as $key => $value): ?>
 
                 <td>
                 <?php $cnt++; ?>
