@@ -1,22 +1,10 @@
 <?php 
     $sun = "日";
-?>
-<?php
     $mon = "月";
-?>
-<?php
     $tue = "火";
-?>
-<?php
     $wed = "水";
-?>
-<?php
     $thu = "木";
-?>
-<?php
     $fri = "金";
-?>
-<?php
     $sat = "土";
 ?>
 
