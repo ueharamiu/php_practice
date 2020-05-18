@@ -1,21 +1,31 @@
-<?php
-$calendar = array();
-$j = 0;
-
-for ($i =1; $i < 7; $i++) {
-    $week = date('w', mktime(0, 0, 0, 0, 0));
-
-    if ($i == 1) {
-        for ($s = 0; $s <= 5; $s++) {
-            $calendar[$j]['day'] = 1;
-            $j++;
-        }
-    }
-}
-
-$calendar[$j]['day'] = $i;
-$j++;
+<?php 
+    $sun = "日";
 ?>
+<?php
+    $mon = "月";
+?>
+<?php
+    $tue = "火";
+?>
+<?php
+    $wed = "水";
+?>
+<?php
+    $thu = "木";
+?>
+<?php
+    $fri = "金";
+?>
+<?php
+    $sat = "土";
+?>
+
+
+
+<?php
+    for ($day = 0; $day <= 7; $day++)
+?>
+
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -28,30 +38,23 @@ $j++;
     <div class="container">  
         <table class="table table-boedered"> 
             <tr>
-                <th>日</th>
-                <th>月</th>
-                <th>火</th>
-                <th>水</th>
-                <th>木</th>
-                <th>金</th>
-                <th>土</th> 
+                <th><?php echo $sun; ?></th>
+                <th><?php echo $mon; ?></th>
+                <th><?php echo $tue; ?></th>
+                <th><?php echo $wed; ?></th>
+                <th><?php echo $thu; ?></th>
+                <th><?php echo $fri; ?></th>
+                <th><?php echo $sat; ?></th> 
             </tr>
-            <?php $cnt = 0; ?>
-            <?php foreach ($calendar as $key => $value): ?>
-
-                <td>
-                <?php $cnt++; ?>
-                <?php echo $value['day']; ?>
-                </td>
-
-            <?php if ($cut == 7): ?>
+            <tr>
+                <td><?php echo $day; ?></td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
             </tr>
-            <td>
-            <?php $cnt = 0; ?>
-            <?php endif; ?>
-
-            <?php endforeach; ?>
-            </td>
         </table>
     </div>
   </body>
