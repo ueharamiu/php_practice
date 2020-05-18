@@ -1,6 +1,6 @@
 <?php 
 $week = array( "日", "月", "火", "水", "木", "金", "土");
-
+    var_dump( $week );
     for ($day = 0; $day <= 7; $day++)
 
 ?>
