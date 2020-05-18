@@ -6,13 +6,11 @@
     $thu = "木";
     $fri = "金";
     $sat = "土";
-?>
 
-
-
-<?php
     for ($day = 0; $day <= 7; $day++)
+
 ?>
+
 
 
 <!DOCTYPE html>
