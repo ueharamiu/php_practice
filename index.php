@@ -1,9 +1,8 @@
 <?php 
 $week = array( "日", "月", "火", "水", "木", "金", "土");
-    var_dump( $week );
-    echo '<br>';
-    for ($day = 0; $day <= 7; $day++)
     
+$days = array( 1, 2, 3, 4, 5, 6, 7);
+    for ($day = 0; $day <= 7; $day++)
 ?>
 
 
@@ -28,13 +27,13 @@ $week = array( "日", "月", "火", "水", "木", "金", "土");
                 <th><?php echo $week[6]; ?></th> 
             </tr>
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
+                <td><?php echo $days[0]; ?></td>
+                <td><?php echo $days[1]; ?></td>
+                <td><?php echo $days[2]; ?></td>
+                <td><?php echo $days[3]; ?></td>
+                <td><?php echo $days[4]; ?></td>
+                <td><?php echo $days[5]; ?></td>
+                <td><?php echo $days[6]; ?></td>
             </tr>
         </table>
     </div>
