@@ -1,8 +1,9 @@
 <?php 
 $week = array( "日", "月", "火", "水", "木", "金", "土");
     var_dump( $week );
+    echo '<br>';
     for ($day = 0; $day <= 7; $day++)
-
+    
 ?>
 
 
@@ -18,16 +19,16 @@ $week = array( "日", "月", "火", "水", "木", "金", "土");
     <div class="container">  
         <table class="table table-boedered"> 
             <tr>
-                <th><?php echo $sun; ?></th>
-                <th><?php echo $mon; ?></th>
-                <th><?php echo $tue; ?></th>
-                <th><?php echo $wed; ?></th>
-                <th><?php echo $thu; ?></th>
-                <th><?php echo $fri; ?></th>
-                <th><?php echo $sat; ?></th> 
+                <th><?php echo $week[0]; ?></th>
+                <th><?php echo $week[1]; ?></th>
+                <th><?php echo $week[2]; ?></th>
+                <th><?php echo $week[3]; ?></th>
+                <th><?php echo $week[4]; ?></th>
+                <th><?php echo $week[5]; ?></th>
+                <th><?php echo $week[6]; ?></th> 
             </tr>
             <tr>
-                <td><?php echo $day; ?></td>
+                <td>1</td>
                 <td>2</td>
                 <td>3</td>
                 <td>4</td>
