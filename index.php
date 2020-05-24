@@ -23,9 +23,13 @@ $days = array( 1, 2, 3, 4, 5, 6, 7);
                  <?php echo '<th>'; ?>
             </tr>
             <tr>
-                <td><?php  for ($day = 0; $day <= 7; $day++) {
-      echo $days[$day];
-    } ?></td>
+
+            <td>
+                <?php for ($day = 0; $day <= 7; $day++) { 
+                echo $days[$day];
+                 } ?>
+            </td>
+            
             </tr>
         </table>
     </div>
