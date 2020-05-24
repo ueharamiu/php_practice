@@ -1,8 +1,6 @@
 <?php 
-$weeks = array( "日", "月", "火", "水", "木", "金", "土");
-    
+$weeks = array( "日", "月", "火", "水", "木", "金", "土"); 
 $days = array( 1, 2, 3, 4, 5, 6, 7);
-   
 ?>
 
 
@@ -18,18 +16,13 @@ $days = array( 1, 2, 3, 4, 5, 6, 7);
     <div class="container">  
         <table class="table table-boedered"> 
             <tr>
-            <th><?php for ($week = 0; $week <= 7; $week++) {
-                 echo $weeks[$week]; } ?></th>
-                 <?php echo '<th>'; ?>
+              <?php for ($week = 0; $week < 7; $week++) { ?>
+              <th><?php echo $weeks[$week]; } ?></th> 
             </tr>
-            <tr>
 
-            <td>
-                <?php for ($day = 0; $day <= 7; $day++) { 
-                echo $days[$day];
-                 } ?>
-            </td>
-            
+            <tr>
+              <?php for ($day = 0; $day < 7; $day++) { ?>
+              <td><?php echo $days[$day]; } ?></td>
             </tr>
         </table>
     </div>
