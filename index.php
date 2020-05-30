@@ -1,6 +1,7 @@
 <?php 
 $weeks = array( "日", "月", "火", "水", "木", "金", "土"); 
-$days = array( 1, 2, 3, 4, 5, 6, 7);
+$calendar = array();
+
 ?>
 
 
@@ -21,8 +22,9 @@ $days = array( 1, 2, 3, 4, 5, 6, 7);
             </tr>
 
             <tr>
-              <?php for ($day = 0; $day < 7; $day++) { ?>
-              <td><?php echo $days[$day]; } ?></td>
+              <?php for ($day = 1; $day < 32; $day++) { ?>
+              <td><?php echo $day; } ?></td>
+              <?php  ?>
             </tr>
         </table>
     </div>
