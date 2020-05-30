@@ -1,30 +1,32 @@
+<?php 
+$weeks = array( "日", "月", "火", "水", "木", "金", "土"); 
+$calendar = array();
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
     <title>Calendar</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <table class="table table-boedered"> 
-          <tr>
-              <th>日</th>
-              <th>月</th>
-              <th>火</th>
-              <th>水</th>
-              <th>木</th>
-              <th>金</th>
-              <th>土</th> 
-          </tr>
-          <tr>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-          </tr>
-      </table>
-    </body>
+    <div class="container">  
+        <table class="table table-boedered"> 
+            <tr>
+              <?php for ($week = 0; $week < 7; $week++) { ?>
+              <th><?php echo $weeks[$week]; } ?></th> 
+            </tr>
+
+            <tr>
+              <?php for ($day = 1; $day < 32; $day++) { ?>
+              <td><?php echo $day; } ?></td>
+              <?php  ?>
+            </tr>
+        </table>
+    </div>
+  </body>
   </html>
