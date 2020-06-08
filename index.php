@@ -1,9 +1,7 @@
 <?php 
-$weeks = array( "日", "月", "火", "水", "木", "金", "土"); 
-$days = array();
+  $weeks = array( "日", "月", "火", "水", "木", "金", "土"); 
+  $days = array();
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -15,6 +13,7 @@ $days = array();
   <body>
     <div class="container">  
         <table class="table table-boedered"> 
+        
            <tr>
             <?php
             for ($week = 0; $week < 7; $week++) {
@@ -22,6 +21,7 @@ $days = array();
             }
             ?>
            </tr>
+
            <?php
               for ($day = 1; $day < 32; $day++) {
                 echo "<td>" . $day . "</td>";
@@ -29,7 +29,7 @@ $days = array();
                     echo "</tr><tr>";
                   }
               }
-              ?>     
+           ?>     
         </table>
     </div>
   </body>
