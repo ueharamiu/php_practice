@@ -16,16 +16,16 @@
         
            <tr>
             <?php
-            for ($week = 0; $week < 7; $week++) {
+            for ( $week = 0; $week < 7; $week++ ) {
               echo "<th>" . $weeks[$week] . "</th>"; 
             }
             ?>
            </tr>
 
            <?php
-              for ($day = 1; $day < 32; $day++) {
+              for ( $day = 1; $day < 32; $day++ ) {
                 echo "<td>" . $day . "</td>";
-                  if ( $day % 7 == 0) {
+                  if ( $day % 7 == 0 ) {
                     echo "</tr><tr>";
                   }
               }
