@@ -15,7 +15,7 @@ $days = array();
   <body>
     <div class="container">  
         <table class="table table-boedered"> 
-            <!--  -->
+            <!--  
             <tr>
               <?php for ($week = 0; $week < 7; $week++) { ?>
               <th><?php echo $weeks[$week]; } ?></th> 
@@ -28,14 +28,19 @@ $days = array();
                echo $day; 
                } ?>  
            </tr>
+           -->
            
             
            <?php
            for($tr = 1; $tr < 6; $tr++) {
             
-             for($td = 1; $td < 8; $td++) { 
-              echo "<td>";
-              }
+            
+             for($td = 1; $td < 8; $td++) {
+              for ($day = 1; $day < 32; $day++) {
+                echo "<td>" . $day . "</td>";
+                if ( $day == 8 || $day || 16 || $day == 23) {
+                  echo "</tr><tr>";
+              }}}
               
              echo "</tr>";
            } ?>
